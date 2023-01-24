@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Kavoon&family=Lobster&display=swap");
+.btn-flip {
+  opacity: 1;
+  outline: 0;
+  color: #fff;
+  line-height: 40px;
+  position: relative;
+  text-align: center;
+  letter-spacing: 1px;
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Open Sans";
+  text-transform: uppercase;
+  cursor: default;
+  min-width: 6rem;
+  max-width: 20rem;
+}
+.btn-flip:hover:after {
+  opacity: 1;
+  transform: translateY(0) rotateX(0);
+}
+.btn-flip:hover:before {
+  opacity: 0;
+  transform: translateY(50%) rotateX(90deg);
+}
+.btn-flip:after {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  color: #323237;
+  display: block;
+  transition: 0.5s;
+  position: absolute;
+  background: #adadaf;
+  content: attr(data-back);
+  transform: translateY(-50%) rotateX(90deg);
+}
+.btn-flip:before {
+  top: 0;
+  left: 0;
+  opacity: 1;
+  color: #adadaf;
+  display: block;
+  padding: 0 30px;
+  line-height: 40px;
+  transition: 0.5s;
+  position: relative;
+  background: #323237;
+  content: attr(data-front);
+  transform: translateY(0) rotateX(0);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  background-color: #0093e9;
+  background-image: linear-gradient(150deg, #0093e9 0%, #80d0c7 100%);
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  justify-content: flex-start;
+  padding-top: 1rem;
+}
+
+ul {
+  width: 60%;
+  list-style: none;
+}
+ul li {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin: 2rem;
+}
+
+h1 {
+  font-family: "Lobster", cursive;
+  margin-bottom: 1rem;
+}
+
+header p {
+  font-family: "Indie Flower", cursive;
+  margin-bottom: 2rem;
+}
+
+div p {
+  font-family: "Kavoon", cursive;
+  color: darkslategrey;
+  letter-spacing: 0.1rem;
+  text-decoration: underline wavy rgb(221, 169, 0) 1px;
+}
+
+[type=text] {
+  background-color: transparent;
+  appearance: none;
+  max-width: 200px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+/*# sourceMappingURL=style.css.map */
