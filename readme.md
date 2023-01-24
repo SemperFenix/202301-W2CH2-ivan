@@ -2,10 +2,10 @@
 
 Crear una función comparadora para entender los tipos primitivos y las excepciones del operador ===.
 
-[x] Utilizamos el método `Object.is(x,n)` apoyándonos en condicionales y operadores if.
-[x] Creo una estructura HTML básica que permita la introducción y envío de datos.
-[x] Para practicar, utilizo un estilo de SCSS para el botón, aunque en realidad es un elemento de tipo anchor `<a>`.
-[] Permitir el envío de los datos.
+- [x] Utilizamos el método `Object.is(x,n)` apoyándonos en condicionales y operadores if.
+- [x] Creo una estructura HTML básica que permita la introducción y envío de datos.
+- [x] Para practicar, utilizo un estilo de SCSS para el botón, aunque en realidad es un elemento de tipo anchor `<a>`.
+- [ ] Permitir el envío de los datos.
 
 ## Dudas
 
