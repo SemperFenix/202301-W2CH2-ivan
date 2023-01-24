@@ -5,11 +5,21 @@ export const strictEquals = (a, b) => {
   } else {
     switch (a) {
       case 0:
-        result = "true";
+        if (Object.is(b, 0) || Object.is(b, -0)) {
+          result = "true";
+        } else {
+          result = "false";
+        }
+
         break;
 
       case -0:
-        result = "true";
+        if (Object.is(b, 0) || Object.is(b, -0)) {
+          result = "true";
+        } else {
+          result = "false";
+        }
+
         break;
 
       default:
